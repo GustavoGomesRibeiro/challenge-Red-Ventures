@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Chamando CSS  -->
+    <link rel="stylesheet" type="text/css" href="/Assets/styles/fieldSearch.css" media="screen" />
+    <title>Challenge Red Ventures</title>
+</head>
+
+<body>
+    <div id='container'>
+        <div id='container-findPlant'>
+            <div id='findPlant'>
+                <img src="/Assets/img/logo.png" alt='logo'>
+                <h1>Find your next green friend</h1>
+            </div>
+        </div>
+        <div id="container-plant">
+            <div class="containerTypePlant">
+            <div class="typePlant">
+                <div class="textSelect">
+                    <img class='imgType' src="/Assets/img/sun.png" alt="sun">
+                    <p>1. Set amount of sunlight your plant will get.</p>
+                </div>
+                <select class="selectPlant" id='sun' onchange="getValue()">
+                    <option value="" selected data-default>Select...</option>
+                    <option value="high">high</option>
+                    <option value="low">low</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="typePlant">
+                <div class="textSelect">
+                    <img class='imgType' src="/Assets/img/wateringcan.png" alt="water">
+                    <p>2. How often do you want to water your plant?</p>
+                </div>
+                <select class="selectPlant" id='water' onchange="getValue()">
+                    <option value="" selected data-default>Select...</option>
+                    <option value="daily">daily</option>
+                    <option value="regularly">regularly</option>
+                    <option value="rarely">rarely</option>
+                </select>
+            </div>
+            <div class="typePlant">
+                <div class="textSelect">
+                    <img class='imgType' src="/Assets/img/dog.png" alt="dog">
+                    <p>3. Do you have pets? Dou they chew plants?</p>
+                </div>
+                <select class="selectPlant" id='pets' onchange="getValue()">
+                    <option value="" selected data-default>Select...</option>
+                    <option value="false">false</option>
+                    <option value="true">true</option>
+                </select>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='containerResult'>
+        <div id='textNoResult'>
+            <h1>No results yet...</h1>
+            <p>Use the filters above to find the plant that best fits your envirtonment :)</p>
+        </div>
+        <img src="/Assets/img/illustration.png" alt="illustration">
+    </div>
+
+    <!-- <div id="teste"></div> -->
+</body>
+
+<!-- Consumo da API -->
+<script src="/Assets/scripts/apiService.js"></script>
+
+</html>

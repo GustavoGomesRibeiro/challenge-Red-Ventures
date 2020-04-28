@@ -1,0 +1,202 @@
+body {
+    background:#F2F2F2;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:0;
+    margin:0;
+    height:100vh;
+    width:100vw;
+    font-family: sans-serif;
+    color:#FFF;
+  }
+
+#findPlant{
+  margin-left: 18%;
+  padding-top: 50px;
+}
+
+.container-findPlantjs{
+  background: none;
+}
+
+.containerTypePlantjs{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin-left: 5%;
+}
+.textPlantName{
+  position: absolute;
+  height: 28px;
+  left: 11.94%;
+  top: calc(50% - 28px/2 + 65px);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1E6B4E;
+}
+
+.textPlantPrice{
+  position: absolute;
+  height: 28px;
+  left: 11.94%;
+  top: calc(50% - 28px/2 + 90px);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1E6B4E;
+}
+
+#container-findPlant{
+  background: #FFF;
+}
+  #findPlant h1{
+    width: 538px;
+    height: 132px;
+    left: 290px;
+    top: 122px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 67px;
+    color: #0B2A1E;
+  }
+  
+  
+  #container-plant{
+    background: #FFFFFF;
+    padding: 45px;
+    margin-top: -2%;
+  }
+  .imgType{
+    left: 0%;
+    right: 66.06%;
+    top: 0%;
+    bottom: 76.27%;
+  }
+  .container-PlantsResults{
+    margin-left: 40%;
+    margin-top: 45%;
+  }
+  .typeimgPlants{
+    left: 55.6%;
+    right: 33.96%;
+    top: 80.99%;
+    bottom: 11.62%;
+    color: black;
+  }
+  .textSelect{
+    height: 55%;
+    left: 0.9%;
+    right: 0%;
+    top: calc(50% - 44px/2 - 55px);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: #848484;
+  }
+.containerTypePlant{
+  display:flex;
+  margin-left: 15%;
+}
+  .typePlant {
+    flex-direction: column;
+    position: relative;;
+    width:221px;
+    height:316px;
+    margin-left: 10px;
+    background-color: #FFF;
+  }
+  .imgPlant{
+    align-items: center;
+    width: 150px;
+    left: 18.28%;
+    right: 18.28%;
+    top: 7.04%;
+    bottom: 33.1%;
+  }
+
+  select option[data-default] {
+    color: #888;
+  }
+  .selectPlant{
+    border-radius: 19px;
+    padding: 10px;
+    border: 1px solid #A8A8A8;
+    box-sizing: border-box;
+  }
+
+  #containerResult{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 312px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+  }
+#textNoResult{
+  margin-left: 12%;
+}
+#textNoResult h1{
+  width: 442px;
+  height: 54px;
+  left: 290px;
+  top: 735px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  color: #A9A9A9;
+}
+
+#textNoResult p{
+  margin-left: 16%;
+  text-align: initial;
+  width: 219px;
+  height: 81px;
+  left: 292px;
+  top: 802px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  color: #A9A9A9;
+}
+
+
+@media (max-width: 1000px) {
+  #findPlant h1{
+      width: 50%;
+  }
+  #containerResult{
+      display: grid;
+  }
+  #container-plant{
+    margin-top: -5%;
+  }
+  .container-findPlantjs h1{
+    margin-left: -14%;
+  }
+  .container-findPlantjs img{
+    margin-left: -98%;
+  }
+}
+
+@media (max-width: 650px) {
+  container-findPlant{
+    /* grid-template-columns: 1fr; */
+    width: 50%;
+}
+}
